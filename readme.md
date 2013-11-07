@@ -13,16 +13,15 @@ Feed it the url of a Soundcloud Sound and it will return an embed.
 
 ##Usage
 
-The plugin is called with {{ soundcloud:sound }}.
+The plugin is called with {{ soundcloud }}.
 
 The following parameters exist:
 
 * url (required)
-* width
-* height
-
-If width is not called, it will default to 100%, if height is not called, it will default to 166px.
+* width (default: 100%)
+* height (default: 166px)
+* autoplay (default: false)
 
 ##Example
 
-	{{ soundcloud:sound url="https://soundcloud.com/twistedpanda/do-that-trouble-i-do" width="100%" height="166px" }}
+	{{ soundcloud url="https://soundcloud.com/twistedpanda/do-that-trouble-i-do" width="100%" height="166px" autoplay="true" }}
